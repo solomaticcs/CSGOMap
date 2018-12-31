@@ -4,9 +4,8 @@ This project is built for CSGO player (including me... XD) that unfamiliar with 
 
 ## Screenshot
 
-![](screenshot/device-2018-12-31-171419.png)
-![](screenshot/device-2018-12-31-171456.png
-)
+<img src="screenshot/device-2018-12-31-171419.png" width="500"/>
+<img src="screenshot/device-2018-12-31-171456.png" width="500"/>
 
 ## Release
 
