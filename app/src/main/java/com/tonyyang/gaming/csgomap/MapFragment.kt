@@ -6,10 +6,7 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.TextView
-import java.security.cert.CertificateNotYetValidException
-
+import it.sephiroth.android.library.imagezoom.ImageViewTouch
 
 /**
  * @author tonyyang
@@ -35,7 +32,7 @@ class MapFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view = inflater.inflate(R.layout.fragment_map, container, false)
-        val image: ImageView = view.findViewById(R.id.image)
+        val image: ImageViewTouch = view.findViewById(R.id.image)
         image.setImageBitmap(getMapBitmap())
         return view
     }
@@ -45,13 +42,12 @@ class MapFragment : Fragment() {
         val config = bitmap.config
         val width = bitmap.width
         val height = bitmap.height
-        val newBitmap = Bitmap.createBitmap(width, height, config);
+        val newBitmap = Bitmap.createBitmap(width, height, config)
         val canvas = Canvas(newBitmap)
         canvas.drawBitmap(bitmap, 0F, 0F, null)
         val paint = Paint()
         paint.color = Color.WHITE
         paint.style = Paint.Style.FILL
-//        paint.textSize = context?.let { DisplayUtils.convertDpToPixel(20F, it) }.parcel()
         paint.textSize = 150F
         val textRect = Rect()
         paint.getTextBounds(data.mapName, 0, data.mapName.length, textRect)
