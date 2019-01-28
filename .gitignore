@@ -8,3 +8,4 @@
 .externalNativeBuild
 csgomap.keystore
 app/release
+app/csgomap_keystore
