@@ -39,6 +39,10 @@ Not yet:
 
 [CS:GO All Map Callouts - Overviews for Competitive Maps 2018](https://www.tobyscs.com/csgo-map-callout-overviews)
 
+## Feedback
+
+[Create an issue](https://github.com/tonyyang924/CSGOMap/issues) for all discussions, bugs, feature requests and pull requests.
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
