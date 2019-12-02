@@ -1,9 +1,5 @@
 package com.tonyyang.gaming.csgomap
 
-/**
- * @author tonyyang
- */
-
 fun String?.parcel(): String = this ?: ""
 
 fun Double?.parcel(): Double = this ?: 0.0
